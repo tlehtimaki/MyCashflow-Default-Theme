@@ -411,7 +411,7 @@ $(function() {
 
 	var $cartRemoveButtons = $('a.CartRemove');
 
-	$cartRemoveButtons.live('click', function(evt) {
+	$cartRemoveButtons.on('click', function(evt) {
 		var $self = $(this),
 			productId = $self.attr('href').split('/')[3];
 
